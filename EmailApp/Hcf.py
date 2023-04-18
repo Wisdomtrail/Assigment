@@ -17,8 +17,11 @@ while num2 > 1:
     else:
         divider2 += 1
 
+
 newArray = []
-length = array.__len__()
-length2 = array2.__len__()
-print(length, length2)
-minCounter = min(length, length2)
+
+for i in array:
+    for j in array2:
+        if i == j and j not in newArray:
+            newArray.append(j)
+print(newArray)
